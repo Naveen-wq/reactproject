@@ -1,4 +1,3 @@
-// components/Login.js
 import React, { useState } from 'react';
 
 function Login({ setLoggedIn }) {
@@ -6,10 +5,9 @@ function Login({ setLoggedIn }) {
     const [password, setPassword] = useState('');
 
     const handleLogin = () => {
-        // Implement your authentication logic here.
-        // For simplicity, let's assume authentication is successful if username and password are not empty.
+        
         if (username && password) {
-            setLoggedIn(true); // Update the authentication state to true
+            setLoggedIn(true);
         } else {
             alert('Invalid credentials');
         }
